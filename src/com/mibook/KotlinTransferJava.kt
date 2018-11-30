@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     println(money)
 
 
-    //使用BigDecimal 科学计数
+    //使用BigDecimal 科学计数   package java.math.BigDecimal
     var big: BigDecimal = BigDecimal("1.234567891234567890")
 
     println(big)

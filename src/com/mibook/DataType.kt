@@ -1,5 +1,11 @@
 package com.mibook
 
+/**
+ * 在项目开发中尽量使用 val, 如果不能使用val时候， 在考虑var  ，  保证程序的安全性
+ */
+//可通过反射来修改值
+const val mm = 20
+
 fun main(args: Array<String>) {
 
 //    1. 基本数据类型  没有包装数据类型
@@ -61,5 +67,33 @@ fun main(args: Array<String>) {
     println(ds.toInt())
 
     //kotlin  类型检查最严格 ，  java只能小的赋值给大的   ，js 基本不检查
+
+    //5 可变变量  不可变变量
+
+    //var 可变 运行时可变
+    var aaa = 10
+    aaa = 20
+    //var 不可变  运行时不可变 ， 反射可以修改里面的值
+    val aab = 10
+    //aab = 20
+
+    // 6 字符串
+
+    val name = "张三"
+    val address = "广东省\n深圳市\n宝安区"
+    println(name)
+    println(address)
+
+    //原样输出字符串
+    val words = """
+          |中华人名
+          |共和国
+    """.trimMargin("|").trim()
+    println(words)
+
+    // 7字符串比较
+
+
+
 
 }
