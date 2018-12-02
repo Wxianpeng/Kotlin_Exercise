@@ -1,4 +1,4 @@
-package com.mibook
+package com.mibook.demo1
 
 import java.math.BigDecimal
 

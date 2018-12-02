@@ -1,4 +1,4 @@
-package com.mibook
+package com.mibook.demo1
 
 /**
  * 在项目开发中尽量使用 val, 如果不能使用val时候， 在考虑var  ，  保证程序的安全性
@@ -77,7 +77,7 @@ fun main(args: Array<String>) {
     val aab = 10
     //aab = 20
 
-    // 6 字符串
+    // 6 字符串        
 
     val name = "张三"
     val address = "广东省\n深圳市\n宝安区"
@@ -94,6 +94,45 @@ fun main(args: Array<String>) {
     // 7字符串比较
 
 
+    var str1 = "abc"
+
+    var str2 = String(charArrayOf('a', 'b', 'c'))
+
+    // == 比较的是值
+    println(str1 == str2)
+    // equals 比较的是值
+    println(str1.equals(str2))
+
+    //equals 和 == 使用方式一样的 。
+
+    //===  比较地址值
+    println(str1 === str2)
+
+    var names = "张三.李四-王五"
+    val result = names.split(".", "-")
+
+    println(result)
+
+    val path = "D:\\Notepad++\\plugins\\APIs"
+
+    //截取前6位
+    println(path.substring(0, 6))
+    //截取 [0-5) 的字符
+    println(path.substring(0..5))
+
+    //截取第一个p之前的字符
+    println(path.substringBefore("p"))
+
+    //截取最后一个p之前的字符
+    println(path.substringBeforeLast("p"))
+
+
+    //截取第一个p之后的字符
+    println(path.substringAfter("p"))
+
+
+    //截取最后一个p之后的字符
+    println(path.substringAfterLast("p"))
 
 
 }
