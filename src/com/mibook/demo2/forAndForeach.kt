@@ -33,5 +33,9 @@ fun main(args: Array<String>) {
 
     }
 
+    val str1 = "abc"
+
+    val str2 = "123"
+
 
 }
